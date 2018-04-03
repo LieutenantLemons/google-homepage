@@ -1,0 +1,36 @@
+* {box-sizing: border-box;}
+
+main {
+  margin: 100px auto;
+  text-align: center;
+}
+input[type=text] {
+  display: block;
+  width: 475px;
+  height: 36px;
+  margin: 25px auto;
+  padding: 10px;
+  border: 1px solid #757575;
+  border-radius: 2px;
+  box-shadow: 0 6px #f2f2f2;
+}
+input[type=button] {
+  height: 36px;
+  width: 140px;
+  background-color: #f2f2f2;
+  color: #757575;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+input[type=button]:hover {
+  background-color: #f8f8f8;
+}
+footer {
+  background-color: #f2f2f2;
+  height: 50px;
+}
