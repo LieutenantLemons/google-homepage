@@ -4,28 +4,51 @@ body {
   font-size: 13px;
   min-width: 1000px;
 }
-nav li {
-  position: relative;
-  top: 10px;
-}
-nav li:first-of-type, nav a:nth-of-type(2) {
-  float: left;
-}
-nav li:nth-of-type(3), nav li:nth-of-type(4), nav li:nth-of-type(5), nav li:last-of-type {
-  float: right;
-}
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 li {
-  display: inline-block;
+  display: inline;
+  float: right;
+  padding-right: 15px;
+}
+li:first-of-type, li:nth-of-type(2) {
+  float: left;
+  padding-left: 10px;
+}
+nav a {
+  margin-top: 15px;
 }
 a {
+  display: inline-block;
   text-decoration: none;
   color: #000;
   opacity: .75;
-  padding-left: 15px;
 }
+nav img {
+  display: inline-block;
+  margin-top: -2px;
+  opacity: .65;
+}
+nav img:hover {
+  opacity: 1;
+}
+#sign-in {
+  border: 1px solid #4285f4;
+  border-radius: 2px;
+  background-color: #4285f4;
+  background: linear-gradient(top, #4387fd, #4683ea);
+  color: #fff;
+  padding: 7px 12px;
+  font-weight: bold;
+  opacity: 1;
+  margin-top: 7px;
+  margin-right: 15px;
+}
+#sign-in:hover {text-decoration: none;}
+#sign-in:active {background-color: #3f76d3;}
 a:hover {text-decoration: underline;}
 a:active {text-decoration: underline;}
 main {
@@ -82,15 +105,9 @@ footer {
   margin: 0;
 }
 footer a {
-  display: inline-block;
   color: #666;
+  padding-top: 12px;
 }
 footer ul {
   padding-left: 25px;
-}
-footer li:first-of-type, footer li:nth-of-type(2) {
-  float: left;
-}
-footer li:last-of-type, footer li:nth-of-type(4), footer li:nth-of-type(3) {
-  float: right;
 }
